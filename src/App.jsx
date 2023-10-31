@@ -1,13 +1,11 @@
-import AddItem from './AddItem'
 import './App.css'
-import ItemList from './ItemList'
+import AddItem from './AddItem'
 
 function App() {
 
     return (
         <>
             <AddItem />
-            <ItemList />
         </>
     )
 }
