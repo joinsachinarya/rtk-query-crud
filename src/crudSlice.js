@@ -7,16 +7,19 @@ const crudSlice = createSlice({
     },
     reducers: {
         addItem: (state, action) => {
+            console.log(action, state);
             state.items.push(action.payload);
         },
         editItem: (state, action) => {
-            const { id, name } = action.payload;
+            const { id, itemName } = action.payload;
+            console.log(action, state);
             const item = state.items.find((item) => item.id === id);
             if (item) {
-                item.name = name;
+                item.itemName = itemName;
             }
         },
         deleteItem: (state, action) => {
+            console.log(action, state);
             state.items = state.items.filter((item) => item.id !== action.payload);
         }
     }
