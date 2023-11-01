@@ -1,13 +1,13 @@
 import './App.css'
-import Home from './components/Home'
+import AddItem from './AddItem'
 
 function App() {
 
-  return (
-    <>
-      <Home />
-    </>
-  )
+    return (
+        <>
+            <AddItem />
+        </>
+    )
 }
 
 export default App
